@@ -24,7 +24,7 @@ Check the repo's [Dockerfile](Dockerfile) for some hints on how to setup your sy
 
 ## Settings
 
-Update [`build.sbt`](build.sbt#L28) replacing the following values:
+Update [`build.sbt`](build.sbt#L24) replacing the following values:
 
 * `PATH_PROTOC` with the path for your `protoc` bin;
 * `PATH_GRPC_JAVA_PLUGIN` with the path for the `protoc-gen-grpc-java` gRPC Java's protobuf plugin.

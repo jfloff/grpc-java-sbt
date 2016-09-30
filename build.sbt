@@ -22,10 +22,9 @@ description := "Example of grcp-java on sbt"
 libraryDependencies += "io.grpc" % "grpc-all" % "1.0.1"
 
 // << Update these value according to your configuration >>
-// PATH FOR THE protobuf compiler bin
+// PATH FOR THE: protobuf compiler bin
 val PATH_PROTOC = "/usr/bin/protoc"
-// PATH FOR THE gRPC-Java Protobuf Plugin
-// val PATH_GRPC_JAVA_PLUGIN = "/home/grpc-java/compiler/build/exe/java_plugin/protoc-gen-grpc-java"
+// PATH FOR THE: grpc-java protobuf Plugin
 val PATH_GRPC_JAVA_PLUGIN = "/usr/local/bin/protoc-gen-grpc-java"
 
 // gRPC config
