@@ -15,11 +15,11 @@ Please refer to the following links for more information:
 
 ## Requirements
 
-* `grpc-java` to already be built. I recommend you to build it from source (downloading from [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22protoc-gen-grpc-java%22) is also a possibility if compatible with your OS). You can find build instructions at the [grpc-java repo](https://github.com/grpc/grpc-java/tree/master/compiler);
-* `protobuf` compiler available (version `3.0.0` or up). You can find more information at  [google/protobuf](https://github.com/google/protobuf);
+* `grpc-java` plugin built. I recommend you to build it from source (downloading from [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22protoc-gen-grpc-java%22) is also a possibility if compatible with your OS). You can find build instructions at the [grpc-java](https://github.com/grpc/grpc-java/tree/master/compiler);
+* `protobuf` compiler available (version `3.0.0` or up). You can find more information at [google/protobuf](https://github.com/google/protobuf);
 * `sbt` to build the project
 
-Check the repo's [Dockerfile](Dockerfile) for some hints on how to setup your systems. More info on Docker image below.
+Check the repo's [Dockerfile](Dockerfile) for some hints on how to setup your system. More info on the Docker image below.
 
 
 ## Settings
@@ -32,7 +32,7 @@ Update [`build.sbt`](build.sbt#L28) replacing the following values:
 
 ## Run
 
-In one terminal run `sbt run` and select the `hello-world-server` main to spawn a server. In another terminal run `sbt run`again and select `hello-world-client` main to spawn a client (you can spawn multiple ones repeating this step).
+In one terminal run `sbt run` and select the `hello-world-server` main to spawn a server. In another terminal run `sbt run` again and select `hello-world-client` main to spawn a client (you can spawn multiple clients by repeating this step).
 
 That's it!
 
@@ -43,4 +43,4 @@ I'm also providing a Dockerfile that builds an image that pre-builds all the lis
 
 * To build the image just run: `docker build --rm -t jfloff/grpc-java-sbt .`
 * Run the image with: `docker run -it --name grpc-java-sbt jfloff/grpc-java-sbt`
-* And for a 2nd terminal run: `docker exec -ti grpc-java-sbt`
+* And for a 2nd terminal run: `docker exec -ti grpc-java-sbt run sbt`
