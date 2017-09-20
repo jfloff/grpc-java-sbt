@@ -1,4 +1,3 @@
-# Echo Client-Server with Redis writes on the server side.
 FROM openjdk:8
 
 MAINTAINER João Loff <jfloff@gsd.inesc-id.pt>
